@@ -10,12 +10,16 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-const GET = "GET"
-const HEAD = "HEAD"
-const POST = "POST"
-const PUT = "PUT"
-const PATCH = "PATCH"
-const DELETE = "DELETE"
+const (
+	GET     = "GET"
+	HEAD    = "HEAD"
+	POST    = "POST"
+	PUT     = "PUT"
+	PATCH   = "PATCH"
+	DELETE  = "DELETE"
+	TRACE   = "TRACE"
+	OPTIONS = "OPTIONS"
+)
 
 type RequestOption func(r *http.Request)
 
